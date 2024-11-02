@@ -1,19 +1,20 @@
 import './App.css'
 import Navbar from './components/Navbar'
-import Chart from './components/Chart'
+import Card from './components/Card'
 
 function App() {
 
   return (
     <>
-      <div>
-        <Navbar />
-        <Chart />
-        <p className="text-red-500 font-bold">
-          App.jsx
-        </p>
-        
+      <Navbar />
+      <div className='grid grid-cols-3'>
+        <Card coin_name={'bitcoin'} />
+        <Card coin_name={'ethereum'} />
+        <Card coin_name={'dogecoin'} />
       </div>
+      <p className="text-red-500 font-bold">
+          App.jsx
+      </p>
     </>
   )
 }
